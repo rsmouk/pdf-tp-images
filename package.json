@@ -1,0 +1,27 @@
+{
+  "name": "pdf-to-images-converter",
+  "version": "1.0.0",
+  "description": "Free online PDF to image converter - Convert PDF to JPG, PNG, WebP instantly",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p public && cp pdf-to-images.html public/index.html && cp README.md public/ && cp sitemap.xml public/ && cp robots.txt public/",
+    "start": "npm run build && npx http-server public -p 3000",
+    "dev": "npx http-server public -p 3000 -c-1"
+  },
+  "keywords": [
+    "pdf",
+    "converter",
+    "pdf-to-image",
+    "pdf-to-jpg",
+    "pdf-to-png",
+    "online-tool",
+    "free-tool",
+    "image-conversion"
+  ],
+  "author": "PDF Tools",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pdf-to-images.git"
+  }
+}
